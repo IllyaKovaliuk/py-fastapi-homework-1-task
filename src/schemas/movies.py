@@ -21,7 +21,7 @@ class MovieDetailResponseSchema(BaseModel):
     country: str
 
     class Config:
-        from_attributes=True
+        from_attributes = True
 
 
 class MovieListResponseSchema(BaseModel):
@@ -39,7 +39,8 @@ class MovieListResponseSchema(BaseModel):
     country: str
 
     class Config:
-        from_attributes=True
+        from_attributes = True
+
 
 class MoviesPaginationResponse(BaseModel):
     movies: List[MovieListResponseSchema]
@@ -49,4 +50,4 @@ class MoviesPaginationResponse(BaseModel):
     total_items: int
 
     class Config:
-        from_attributes=True
+        from_attributes = True
