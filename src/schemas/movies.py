@@ -34,7 +34,7 @@ class MovieListResponseSchema(BaseModel):
     orig_title: str
     status: str
     orig_lang: str
-    budget: int
+    budget: float
     revenue: float
     country: str
 

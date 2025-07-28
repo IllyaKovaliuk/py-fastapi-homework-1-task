@@ -54,4 +54,4 @@ async def get_movie(movie_id: int, db: AsyncSession = Depends(get_db)):
             status_code=404,
             detail="Movie with the given ID was not found."
         )
-    return movie
+    return MovieDetailResponseSchema.from_orm(movie)
